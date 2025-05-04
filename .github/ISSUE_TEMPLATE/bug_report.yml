@@ -1,0 +1,13 @@
+name: Bug Report
+description: Report a bug or crash
+title: "[BUG] Describe the issue"
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Tell us what you saw, with steps if possible.
+      placeholder: Explain the issue...
+    validations:
+      required: true

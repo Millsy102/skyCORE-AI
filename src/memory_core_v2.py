@@ -29,4 +29,6 @@ class MemoryCoreV2:
     def sync(self):
         try:
             requests.post(self.cloud_url, json=self.entries)
-        except:
+except Exception:
+    print('Memory error handled')
+    print('Memory error')

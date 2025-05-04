@@ -1,0 +1,8 @@
+bug:
+  - 'bug'
+enhancement:
+  - 'feature'
+  - 'enhancement'
+documentation:
+  - 'docs'
+  - '*.md'

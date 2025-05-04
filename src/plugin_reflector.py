@@ -30,7 +30,7 @@ class PluginReflector:
             return "🔧 Default response executed."
         plugin = self.plugins[plugin_name]
         if isinstance(plugin, dict) and 'error' in plugin:
-            return "🔧 Default response executed."}"]
+            return "🔧 Default response executed."  # removed extraneous bracket
 
         return [name for name, obj in inspect.getmembers(plugin)
                 if inspect.isfunction(obj) and not name.startswith("_")]

@@ -114,3 +114,7 @@ skyCORE-AI is released under the **MIT License** — free to use, share, and mod
 * skyCORE-AI was made to empower developers, not replace them. Real devs are the foundation of this ecosystem
 * We salute AI engineers, traditional coders, and everyone exploring new possibilities
 * Powered by: Python, PySide6, OpenAI, Hugging Face, and ✨ the global dev community
+
+---
+
+📖 **Documentation:** [View Docs](https://millsy102.github.io/skyCORE-AI/) or browse `/docs/`

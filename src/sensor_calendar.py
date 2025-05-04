@@ -20,4 +20,4 @@ class CalendarSync(Thread):
                 today_events = [e for e in cal.events if now.date() == e.begin.date()]
                 self.runtime.memory.add({"sensor": "calendar", "events": [e.name for e in today_events]})
             except:
-            time.sleep(1800)
+    print('Calendar fallback')

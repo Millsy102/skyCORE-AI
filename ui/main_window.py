@@ -27,7 +27,7 @@ class MainWindow(QMainWindow):
         self.safe_checkbox = QCheckBox("Safe Mode")
         self.safe_checkbox.stateChanged.connect(self.toggle_safe_mode)
 self.profile_mgr = ConfigProfileManager()
-        self.export_button = QPushButton("Export Profile")
+        self.export_button = QPushButton('Export Profile')
         self.export_button.clicked.connect(self.export_profile)
         self.import_button = QPushButton("Import Profile")
         self.import_button.clicked.connect(self.import_profile)

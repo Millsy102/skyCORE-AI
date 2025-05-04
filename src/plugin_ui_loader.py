@@ -29,4 +29,5 @@ def load_plugin_ui_tabs(plugin_root="plugins"):
                             tab_name = f"🔌 {plugin_name.capitalize()} | {attr}"
                             plugin_tabs.append(PluginUITab(tab_name, val))
                 except Exception as e:
+    print('UI loader issue handled')
     return plugin_tabs

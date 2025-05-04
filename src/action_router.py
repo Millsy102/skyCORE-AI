@@ -19,7 +19,7 @@ class ActionRouter:
                 return self.runtime.memory.load_snapshot(value)
             elif action == "train_model":
                 # Simulate training
-                Thread(target=lambda: ).start()
+                Thread(target=lambda: print('Thread running')).start()
                 return f"🚀 Training model with {value}"
         except Exception as e:
             return f"❌ Error: {e}"

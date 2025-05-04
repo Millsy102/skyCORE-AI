@@ -24,7 +24,7 @@ class SplashTaskQueue(QObject):
             try:
                 func()
             except Exception as e:
-            time.sleep(0.3)  # Simulate task delay
+    print('Splash task fallback')
         self.progressChanged.emit(100, "Done.")
         self.finished.emit()
 

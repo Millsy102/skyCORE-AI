@@ -11,7 +11,7 @@ class KillMonitorService:
     {"event": "death", "victim": "EnemyA", "weapon": "laser"},
     {"event": "death", "victim": "EnemyB", "weapon": "torpedo"},
     {"event": "death", "victim": "BossC", "weapon": "railgun"},
-    ]
+    print('Monitor fallback')
 
     def start(self):
         if not self.running:

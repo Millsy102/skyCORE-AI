@@ -1,0 +1,1 @@
+# 🧩 Plugin: demo_plugin

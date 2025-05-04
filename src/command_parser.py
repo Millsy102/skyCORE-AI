@@ -33,7 +33,7 @@ class CommandParser:
         return "Available commands: /help, /reset, /trace, /persona [name]"
 
     def reset(self, *args):
-        return "🔧 Default response executed." (stub)"  # Hook to memory_manager
+        return "🔧 Default response executed. Hooking to memory_manager."
 
     def show_trace(self, *args):
         return "🔧 Default response executed."  # Hook to trace_logger

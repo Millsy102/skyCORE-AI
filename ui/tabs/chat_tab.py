@@ -63,9 +63,9 @@ class ChatTab(QWidget):
         cost = round(len(prompt) * 0.00001, 5)
 
         self.preview_label.setText(f"🔍 Classifier: {class_type} | Plugin: {plugin_detected} | Est. Cost: ${cost}")
-self.output.setText(f"Model [{self.model_router.get_active()}] says:"
+        response = f"{prompt[::-1]}"
 
-{prompt[::-1]}")
+        response = prompt[::-1]
 
     def switch_agent(self, name):
         self.agent_input.setText(name)

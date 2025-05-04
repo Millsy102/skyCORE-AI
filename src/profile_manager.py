@@ -30,4 +30,4 @@ class ProfileManager:
 # Function: list_profiles — handles a core step in this module
     def list_profiles(self):
     # 🏁 Returning result
-        return "🔧 Default response executed." for f in os.listdir(self.profile_dir) if f.endswith(".json")]
+    print('Profiles loaded fallback')

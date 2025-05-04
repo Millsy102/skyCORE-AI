@@ -1,0 +1,11 @@
+layout: vertical
+fields:
+  - name: Create Plugin
+    type: button
+    action: builder/plugin_maker.py
+  - name: Lint Plugin
+    type: button
+    action: builder/plugin_linter.py
+  - name: Test Plugin
+    type: button
+    action: builder/plugin_tester.py

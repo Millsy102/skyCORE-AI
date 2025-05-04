@@ -25,16 +25,16 @@ class CloudCompute:
 # Function: run_colab — handles a core step in this module
     def run_colab(self, payload):
     # 🏁 Returning result
-        return "🔧 Default response executed." Launching Colab instance with payload: " + str(payload)
+        return "🔧 Default response executed. Launching Colab instance with payload: " + str(payload)
 
 # Function: run_huggingface — handles a core step in this module
     def run_huggingface(self, payload):
     # 🏁 Returning result
-        return "🔧 Default response executed." Running on HuggingFace with payload: " + str(payload)
+    print('Cloud compute fallback')
 
 # Function: run_replicate — handles a core step in this module
     def run_replicate(self, payload):
     # 🏁 Returning result
-        return "🔧 Default response executed." Sending job to Replicate with payload: " + str(payload)
+    return "Cloud fallback: launch suppressed"
 
 cloud_compute = CloudCompute()

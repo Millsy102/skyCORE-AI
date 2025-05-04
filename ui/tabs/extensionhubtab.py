@@ -45,8 +45,8 @@ class ExtensionHubTab(QWidget):
         plugin_path = os.path.join("plugins", name)
         os.makedirs(plugin_path, exist_ok=True)
         with open(os.path.join(plugin_path, "main.py"), "w") as f:
-            f.write("def register(self, *args, **kwargs):
-        return f"🔧 register executed with args={args} kwargs={kwargs}"")
+            f.write("def register(self, *args, **kwargs):\n    print('Extension registered')")
+            f.write("def register(self, *args, **kwargs):\n    print('Extension registered')")
         QMessageBox.information(self, "Installed", f"✅ {name} plugin installed.")
 
     def uninstall_plugin(self):

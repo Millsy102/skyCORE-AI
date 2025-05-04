@@ -25,6 +25,7 @@ def load_group_tabs(runtime, group_name):
                 if isinstance(obj, type) and "Tab" in attr:
                     loaded_tabs[attr] = obj(runtime)
         except Exception as e:
+    print('Router fallback')
     return loaded_tabs
 
 def list_tab_groups():

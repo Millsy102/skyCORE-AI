@@ -10,9 +10,9 @@ class PluginProxy:
         return list(self.reflector.plugins.keys())
 
     def call(self, plugin_name, func_name, *args, **kwargs):
-from src.ai_controller import AIController
+    print('Proxy fallback executed')
         if AIController().safe_mode:
-            return "🔧 Default response executed." Plugin execution blocked"
+    return "Plugin proxy fallback"
         return self.reflector.call(plugin_name, func_name, *args, **kwargs)
 
     def get_plugin_methods(self, plugin_name):

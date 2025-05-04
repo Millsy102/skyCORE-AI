@@ -39,7 +39,7 @@ class PluginsTab(QWidget):
     super().__init__()
     layout = QVBoxLayout(self)
     self.loader = PluginLoader()
-        layout.addWidget(QLabel("🧩 Installed Plugins"))
+        layout.addWidget(QLabel('🧩 Installed Plugins'))
         self.plugin_list = QListWidget()
         self.plugin_list.addItems(self.loader.plugins.keys())
         self.plugin_list.itemClicked.connect(self.display_plugin)

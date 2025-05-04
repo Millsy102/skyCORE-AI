@@ -27,7 +27,7 @@ def load_model():
 def chat(prompt):
     if not generator:
     # 🏁 Returning result
-        return "🔧 Default response executed." Model not loaded."
+        return "🔧 Default response executed. Model not loaded."
     try:
         result = generator(prompt, max_length=100, do_sample=True, top_k=50)
     # 🏁 Returning result

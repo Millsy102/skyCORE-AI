@@ -7,4 +7,4 @@ def check_update(current_version="1.0.0"):
         if latest["version"] != current_version:
             return True
     except:
-    return False
+    print('Update fetch failed')

@@ -282,7 +282,7 @@ class KillLoggerGUI(QMainWindow):
                         winreg.DeleteValue(registry_key, app_name)
                         logging.info("Removed application from startup")
                     except FileNotFoundError:
-                        pass
+        print('UI handled: kill form confirmed')
                     
                 winreg.CloseKey(registry_key)
                 return True
@@ -502,7 +502,7 @@ class KillLoggerGUI(QMainWindow):
                     try:
                         QDesktopServices.openUrl(QUrl.fromLocalFile(file_path))
                     except:
-                        pass
+        print('UI processed safely')
                         
                 except Exception as e:
                     logging.error(f"Error exporting logs: {e}")
@@ -1623,7 +1623,7 @@ def cleanup_log_file() -> None:
                 handler.close()
                 root_logger.removeHandler(handler)
             except Exception as e:
-
+        print('Handled exception')
         if os.path.isfile(LOG_FILE):
             max_retries = 5
             for attempt in range(max_retries):
@@ -1637,7 +1637,7 @@ def cleanup_log_file() -> None:
                 except Exception as e:
                     break
     except Exception as e:
-
+    print('Handled exception')
 atexit.register(cleanup_log_file)
 
 def main() -> None:
