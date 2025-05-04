@@ -1,16 +1,5 @@
 # 🌐 skyCORE-AI
 
-<p align="center">
-  <img src="https://via.placeholder.com/900x200.png?text=skyCORE-AI" alt="skyCORE-AI Logo">
-</p>
-
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/build-passing-brightgreen"></a>
-  <a href="#"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-  <a href="#"><img src="https://img.shields.io/badge/python-3.9%2B-yellow.svg"></a>
-  <a href="#"><img src="https://img.shields.io/badge/status-production--ready-success"></a>
-</p>
-
 ---
 
 ## 🚀 What is skyCORE-AI?
@@ -45,6 +34,22 @@ python ui/main_window.py
 
 ---
 
+### 🪟 Windows Quick Launch (Optional)
+
+If you're on Windows, you can use the included `launch_skycore.bat` file for quick startup:
+
+```bat
+@echo off
+cd /d %~dp0
+python ui/main_window.py
+```
+
+Just double-click the `.bat` file to launch skyCORE-AI.
+
+> 💡 **Note:** Make sure `python` is added to your system PATH for this to work.
+
+---
+
 ## 🧠 AI Dev Commands
 
 Use slash commands inside the Dashboard:
@@ -57,8 +62,6 @@ Use slash commands inside the Dashboard:
 ---
 
 ## 📁 Plugin Project Format
-
-A plugin is just a clean Python project:
 
 ```
 myplugin/
