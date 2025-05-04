@@ -1,0 +1,8 @@
+{
+  "username": "YourTwitchUser",
+  "channel": "YourTwitchChannel",
+  "client_id": "abc123",
+  "client_secret": "def456",
+  "access_token": "replace_me",
+  "refresh_token": "replace_me"
+}

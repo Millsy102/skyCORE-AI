@@ -1,0 +1,10 @@
+{
+    "client_id": "",
+    "client_secret": "",
+    "broadcaster_name": "",
+    "broadcaster_id": "",
+    "access_token": "",
+    "refresh_token": "",
+    "token_expiry": null,
+    "clip_delay_seconds": 0
+}

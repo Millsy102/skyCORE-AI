@@ -1,0 +1,13 @@
+{
+    "api_key": "",
+    "log_path": "",
+    "killer_ship": "No Ship",
+    "kill_sound_enabled": false,
+    "kill_sound_path": "c:\\Users\\caleb\\OneDrive\\Desktop\\SCTool Tracker\\kill.wav",
+    "kill_sound_volume": 50,
+    "twitch_enabled": false,
+    "twitch_channel": "",
+    "clip_creation_enabled": true,
+    "clip_delay_seconds": 5,
+    "send_to_api": true
+}

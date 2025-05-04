@@ -1,0 +1,48 @@
+models:
+- id: gpt2
+  provider: huggingface
+  task_score:
+    chat: 4
+    code: 2
+- id: tiiuae/falcon-7b
+  provider: huggingface
+  task_score:
+    chat: 7
+    code: 5
+- id: mistralai/Mistral-7B-Instruct-v0.1
+  provider: huggingface
+  task_score:
+    chat: 9
+    code: 8
+- id: meta-llama/Llama-2-13b-chat-hf
+  provider: huggingface
+  task_score:
+    chat: 8
+    code: 7
+- id: tiiuae/falcon-rw-1b
+  provider: huggingface
+  task_score:
+    chat: 5
+    code: 4
+- id: EleutherAI/gpt-j-6B
+  provider: huggingface
+  task_score:
+    chat: 6
+    code: 6
+- id: bigscience/bloom
+  provider: huggingface
+  task_score:
+    chat: 6
+    code: 5
+- id: openai/whisper
+  provider: huggingface
+  task_score:
+    audio: 9
+- id: CompVis/stable-diffusion-v1-4
+  provider: huggingface
+  task_score:
+    image: 9
+- id: Salesforce/blip-image-captioning-large
+  provider: huggingface
+  task_score:
+    image: 7

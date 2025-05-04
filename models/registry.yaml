@@ -1,0 +1,21 @@
+models:
+  - id: gpt2
+    name: GPT-2
+    provider: huggingface
+    type: text-generation
+    description: OpenAI GPT-2 small model
+    tags: [openai, huggingface, small]
+
+  - id: distilbert-base-uncased
+    name: DistilBERT (Base)
+    provider: huggingface
+    type: embedding
+    description: Lightweight BERT model for classification/embedding
+    tags: [bert, transformers, nlp]
+
+  - id: custom_model
+    name: Custom Model
+    provider: local
+    type: custom
+    description: Developer-registered plugin model
+    tags: [custom]

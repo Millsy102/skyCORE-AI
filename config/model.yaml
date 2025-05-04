@@ -1,0 +1,2 @@
+default: openai:gpt-4
+fallback: openai:gpt-3.5

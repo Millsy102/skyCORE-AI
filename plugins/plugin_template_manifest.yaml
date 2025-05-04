@@ -1,0 +1,14 @@
+# SkyCore Plugin Manifest Example
+
+name: my_plugin
+version: 0.1.0
+author: YourName
+description: Sample plugin generated via SkyDev
+entry: plugin.py
+config: config.yaml
+ui: ui.yaml
+assets: assets/
+consent_required:
+  - nsfw
+  - cloud
+  - telemetry

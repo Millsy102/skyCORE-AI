@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkyCore Companion Overlay</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      color: #eee;
+      background-color: rgba(0, 0, 0, 0.85);
+      margin: 0;
+      padding: 20px;
+      font-size: 18px;
+    }
+    .status {
+      font-size: 22px;
+      font-weight: bold;
+      color: #90ee90;
+    }
+    .label {
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="status">Status: <span id="status">...</span></div>
+    <div><span class="label">Kills:</span> <span id="kills">0</span></div>
+    <div><span class="label">Deaths:</span> <span id="deaths">0</span></div>
+    <div><span class="label">Last Update:</span> <span id="time">...</span></div>
+  </div>
+
+  <script>
+    async function fetchOverlay() {
+      try {
+        const response = await fetch("overlay.json?_=" + Date.now());
+        const data = await response.json();
+        document.getElementById("status").textContent = data.status || "—";
+        document.getElementById("kills").textContent = data.kills;
+        document.getElementById("deaths").textContent = data.deaths;
+        document.getElementById("time").textContent = new Date(data.last_updated * 1000).toLocaleTimeString();
+      } catch (err) {
+        console.error("Overlay fetch failed:", err);
+      }
+    }
+    setInterval(fetchOverlay, 3000);
+    fetchOverlay();
+  </script>
+  <div style="margin-top: 20px;">
+    <label for="theme">🎨 Theme:</label>
+    <select id="theme" onchange="switchTheme(this.value)">
+      <option value="dark" selected>Dark</option>
+      <option value="light">Light</option>
+      <option value="neon">Neon</option>
+    </select>
+  </div>
+
+  <style id="theme-style"></style>
+
+  <script>
+    const themes = {
+      dark: {
+        body: "background-color: rgba(0, 0, 0, 0.85); color: #eee;",
+        status: "color: #90ee90;",
+        label: "color: #aaa;"
+      },
+      light: {
+        body: "background-color: #f5f5f5; color: #222;",
+        status: "color: #008000;",
+        label: "color: #666;"
+      },
+      neon: {
+        body: "background-color: black; color: #00ffff;",
+        status: "color: #ff00ff;",
+        label: "color: #00ff00;"
+      }
+    };
+
+    function switchTheme(name) {
+      const theme = themes[name];
+      let style = `
+        body { ${theme.body} }
+        .status { ${theme.status} }
+        .label { ${theme.label} }
+      `;
+      document.getElementById("theme-style").textContent = style;
+    }
+
+    switchTheme("dark");
+  </script>
+
+</body>
+</html>

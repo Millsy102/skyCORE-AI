@@ -1,0 +1,16 @@
+{
+  "project": "SkyCore OS",
+  "license": "MIT",
+  "core_rule": "Use AI as much as possible in all plugin logic.",
+  "plugin_must_include": [
+    "plugin.py",
+    "use_model()",
+    "smart_selector()",
+    "requirements.txt"
+  ],
+  "cloud_supported": [
+    "Colab",
+    "HuggingFace",
+    "Replicate"
+  ]
+}

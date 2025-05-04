@@ -1,0 +1,8 @@
+{
+  "safe_mode": true,
+  "theme": "dark",
+  "default_model": "gpt2",
+  "cloud_provider": "local",
+  "auto_update_plugins": false,
+  "log_level": "info"
+}
