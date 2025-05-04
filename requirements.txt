@@ -1,6 +1,8 @@
-PySide6
-requests>=2.32.0
-obs-websocket-py
-websocket-client
-torch>=2.6.0
-tqdm>=4.66.3
+pyqt5
+PyYAML==6.0.2
+transformers
+torch>=2.1.0 
+tqdm>=4.66.4
+colorama
+rich==13.9.4
+requests>=2.32.1
