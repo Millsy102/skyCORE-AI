@@ -1,4 +1,7 @@
 @echo off
+:: 📄 Generates CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md
+
+@echo off
 echo == Generating CONTRIBUTING.md, SECURITY.md, and CODE_OF_CONDUCT.md ==
 
 :: CONTRIBUTING

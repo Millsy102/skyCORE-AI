@@ -1,4 +1,7 @@
 @echo off
+:: 🔖 Tags the current commit as v1.0 and pushes to GitHub
+
+@echo off
 echo == Tagging current commit as v1.0 and pushing tag ==
 git tag v1.0
 git push origin v1.0
