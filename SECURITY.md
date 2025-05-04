@@ -1,2 +1,2 @@
-# Security Policy 
-Please report vulnerabilities via GitHub Issues or Discussions. 
+# Security 
+Report vulnerabilities via GitHub issues or private contact. 
