@@ -11,78 +11,92 @@
 
 ---
 
-# **🚀 skyCORE-AI v1.0**
+# 🚀 skyCORE-AI v1.0
 
 **skyCORE-AI** is a universal AI-powered plugin execution engine, IDE, and developer assistant. Drop in ANY Python plugin (zipped), and skyCORE-AI will scan, configure, validate, test, and render its UI — no code changes needed.
 
 ---
 
-## **✅ FEATURES**
+## ✅ Features
 
-- 🧠 **AI Controller** with persona, memory, trace, and safe mode
-- 🔌 **Plugin ZIP Loader** – Drop `.zip` Python projects into `/plugins_zips`
-- 🧩 **Universal Plugin Runtime** – Calls any function from `main.py`
-- 🧰 **SkyDev IDE** – VSCode-style tabbed file editor, runner, validator
-- 🗂 **Config Auto-Loader** – Parses `.env`, `.yaml`, `.json` plugin settings
-- 🖼 **GUI Renderer** – Parses `ui.yaml` → Live PySide widget panels
-- 📤 **Plugin Output Dock** – See plugin return results live
-- 🔍 **Trace Tab** – View and replay every prompt and response
-- 🔐 **Safe Mode** – Blocks plugin execution until enabled
-- 🎨 **Theme Engine** – Switch between dark/light via dropdown
-- 🧪 **Profile Manager** – Export/Import settings via `.skyprofile`
-
----
-
-## **📦 INSTALLATION**
-
-1. Extract this zip.
-2. Install requirements (Python 3.9+):  
-   `pip install -r requirements.txt` *(or manually install PySide6)*
-3. Run skyCORE-AI:  
-   `python ui/main_window.py`
+* 🧠 **AI Controller** with persona, memory, trace, and safe mode
+* 🔌 **Plugin ZIP Loader** – Drop `.zip` Python projects into `/plugins_zips/`
+* 🧩 **Universal Plugin Runtime** – Calls any function from `main.py`
+* 🧰 **SkyDev IDE** – VSCode-style tabbed file editor, runner, and validator
+* 🗂 **Config Auto-Loader** – Parses `.env`, `.yaml`, and `.json` plugin settings
+* 🖼 **GUI Renderer** – Converts `ui.yaml` into live PySide widget panels
+* 📤 **Plugin Output Dock** – View plugin return results in real time
+* 🔍 **Trace Tab** – Inspect and replay every prompt and response
+* 🔐 **Safe Mode** – Blocks plugin execution until explicitly enabled
+* 🎨 **Theme Engine** – Toggle between dark and light modes via dropdown
+* 🧪 **Profile Manager** – Export/import settings via `.skyprofile`
 
 ---
 
-## **🛠️ USAGE**
+## 📦 Installation
 
-- Drop zipped Python plugins into `/plugins_zips/`
-- skyCORE-AI auto-extracts into `/plugins/` and makes them available
-- Use **Dashboard** to chat and trigger plugins via `/plugin name method`
-- Use **SkyDev** to edit, test, and preview plugin logic/UI
+1. Extract the repository zip.
+2. Install dependencies (Python 3.9+):
 
----
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Launch skyCORE-AI:
 
-## **🔒 SECURITY**
-
-skyCORE-AI includes:
-- Safe Mode toggle (blocks plugin calls unless enabled)
-- Ethical guard against dangerous commands
-- Prompt stack isolation with trace logs
+   ```bash
+   python ui/main_window.py
+   ```
 
 ---
 
-## **✅ VERIFIED CLEAN BUILD**
+## 🛠️ Usage
 
-- 🔎 Fully deep-scanned — **no placeholders, no stub logic, no fake print output**
-- 💯 Every function and system works as intended
-- 🧹 Debug `print()` statements removed for production readiness
-
----
-
-## **📂 FILE STRUCTURE**
-
-See `SkyCore_v1_Tree.md` for the full directory layout.
+1. **Add Plugins**: Drop zipped Python plugins into `/plugins_zips/`.
+2. **Auto-Extraction**: skyCORE-AI unpacks plugins into `/plugins/` and loads them.
+3. **Dashboard**: Chat and trigger plugin methods using `/plugin_name method`.
+4. **SkyDev IDE**: Edit, test, and preview plugin logic and UI in-app.
 
 ---
 
-## **👑 BUILT WITH**
+## 🔒 Security
 
-skyCORE-AI was designed for:
-- Plugin developers
-- AI researchers
-- System engineers
-- Anyone who wants to run Python tools with AI support
+* **Safe Mode** toggle to prevent unintended plugin execution.
+* **Ethical Guardrails** to block dangerous commands.
+* **Prompt Isolation**: Each interaction logs traceable prompts and responses.
 
 ---
 
-Ready to launch, extend, or open source.
+## ✅ Verified Clean Build
+
+* Deep-scanned: no placeholders, stub logic, or fake outputs.
+* Production-ready: all `print()` debug statements removed.
+* Fully functional: every feature tested and confirmed working.
+
+---
+
+## 📂 File Structure
+
+For a complete directory layout, see [SkyCore\_v1\_Tree.md](SkyCore_v1_Tree.md).
+
+---
+
+## 👑 Built With
+
+skyCORE-AI is designed for:
+
+* Plugin developers
+* AI researchers
+* System engineers
+* Anyone wanting to run Python tools with AI support
+
+Ready to launch, extend, and open source. Contributions welcome!
+
+---
+
+## 💬 Community
+
+Join our community on Discord for support, updates, and discussion:
+
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289da?logo=discord\&logoColor=white)](https://discord.gg/m4ZCy2UbCY)
+
+[Join us on Discord](https://discord.gg/m4ZCy2UbCY)
