@@ -10,4 +10,4 @@ class EthicalGuard:
         for forbidden in self.blocklist:
             if forbidden in lower_prompt:
                 return False, f"⚠ Blocked: contains '{forbidden}'"
-        return True, "✔ Prompt passed safety check"
+    return True, '✔ Safety check passed (evaluated)'

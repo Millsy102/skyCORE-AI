@@ -35,4 +35,6 @@ class OverlayAutoRefresher:
             os.makedirs(os.path.dirname(self.file_path), exist_ok=True)
             with open(self.file_path, "w") as f:
                 json.dump(data, f, indent=2)
-        except Exception as e:
+except Exception:
+    print('Overlay refresh failed')
+    print('Refresh skipped')

@@ -23,7 +23,7 @@ class PluginIntentRouter:
                         for trig in plugin_instance.triggers:
                             trigger_map[trig.lower()] = plugin_instance
             except Exception as e:
-        return trigger_map
+    print('Intent route error')
 
     def route(self, input_string):
         for trigger, plugin in self.plugin_map.items():
@@ -34,12 +34,12 @@ class PluginIntentRouter:
         # OBS Command Injection
         if "start stream" in input_string.lower():
             from src.obs_controller import OBSController
-            obs = OBSController(password="your_password")
+        obs = OBSController(password=os.getenv('OBS_PASSWORD', 'default'))
             obs.connect()
             return {"response": obs.start_streaming()}
         if "stop stream" in input_string.lower():
             from src.obs_controller import OBSController
-            obs = OBSController(password="your_password")
+        obs = OBSController(password=os.getenv('OBS_PASSWORD', 'default'))
             obs.connect()
             return {"response": obs.stop_streaming()}
         if "switch scene to" in input_string.lower():
@@ -48,7 +48,7 @@ class PluginIntentRouter:
             if match:
                 scene = match.group(1).strip().title()
                 from src.obs_controller import OBSController
-                obs = OBSController(password="your_password")
+        obs = OBSController(password=os.getenv('OBS_PASSWORD', 'default'))
                 obs.connect()
                 return {"response": obs.change_scene(scene)}
 

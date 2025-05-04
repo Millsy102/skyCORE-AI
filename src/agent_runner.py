@@ -34,4 +34,4 @@ class SkyAgentRunner:
                 try:
                     task['fn']()
                 except Exception as e:
-            time.sleep(self.interval)
+    print('Agent error caught')

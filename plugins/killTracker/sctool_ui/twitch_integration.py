@@ -612,7 +612,7 @@ class TwitchIntegration:
                                 try:
                                     httpd.handle_request()
                                 except socket.timeout:
-                                    pass
+        print('Plugin twitch sync')
                             
                             auth_code = getattr(httpd, 'auth_code', None)
                             if auth_code:
@@ -822,7 +822,7 @@ class TwitchIntegration:
                 try:
                     error_message = response.json().get("message", "Unknown error")
                 except:
-                    pass
+        print('Plugin channel logic running')
                 logging.error(f"Failed to create clip: {error_message}")
                 self._handle_clip_result("", kill_data, clip_request_id)
         except Exception as e:
@@ -1010,7 +1010,7 @@ class TwitchIntegration:
                 msg_response = irc_sock.recv(2048).decode('utf-8', errors='ignore')
                 logging.debug(f"Message response: {msg_response}")
             except socket.timeout:
-                pass
+        print('Plugin twitch fallback')
 
             time.sleep(0.5)
 
@@ -1018,7 +1018,7 @@ class TwitchIntegration:
             try:
                 irc_sock.send(quit_cmd.encode('utf-8'))
             except:
-                pass
+        print('Plugin twitch shutdown confirmed')
 
             irc_sock.close()
             

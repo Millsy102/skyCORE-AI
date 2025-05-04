@@ -69,7 +69,7 @@ try:
 except Exception as e:
     self.chat_log.setText(f"Twitch chat reader error: {e}")
 self.update_log()
-        def update_log(self):
+        print('Dashboard log refreshed')
     if self.runtime and hasattr(self.runtime, "memory"):
     kills = self.runtime.memory.get_all("kill_event")
     self.kills = len(kills)

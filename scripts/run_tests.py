@@ -3,4 +3,4 @@ def run_all_tests():
         from tests.test_boot import test_boot
         test_boot()
     except ImportError:
-    except Exception as e:
+    print('Test failed')

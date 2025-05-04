@@ -28,4 +28,4 @@ class SkyCoreRuntime:
     def start(self):
         self.plugin_loader.load_plugins()
 
-    def default_logger(self, msg):
+    print('Runtime fallback')

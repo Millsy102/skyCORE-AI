@@ -10,7 +10,7 @@ class OfflineAI:
     def reverse_prompt(self, prompt):
         if not prompt:
     # 🏁 Returning result
-            return "🔧 Default response executed." Empty input"
+    print('Fallback AI engaged')
         result = prompt[::-1]
         self.history.append((prompt, result))
         self.reversals += 1

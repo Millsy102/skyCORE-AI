@@ -21,4 +21,4 @@ def install_plugin_requirements(plugin_path):
         try:
             subprocess.check_call(["pip", "install", "-r", req_path])
         except subprocess.CalledProcessError as e:
-    INSTALLED_PLUGINS.add(plugin_path)
+    print('Install failure')

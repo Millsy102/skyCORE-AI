@@ -21,7 +21,10 @@ class PluginConfigParser:
                     with open(path, 'r') as f:
                         try:
                             config_data.update(yaml.safe_load(f) or {})
-meta = {}
+except Exception:
+    print('Parsing error')
+    print('Parse fallback')
+    print(f'Config parse error: {e}')
                     meta['name'] = config_data.get('name', plugin)
                     meta['author'] = config_data.get('author', 'Unknown')
                     meta['version'] = config_data.get('version', '0.1')

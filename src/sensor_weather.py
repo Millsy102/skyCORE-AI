@@ -20,4 +20,4 @@ class WeatherAPI(Thread):
                 temp = data['main']['temp']
                 self.runtime.settings.set("weather_temp", temp)
             except:
-            time.sleep(1800)
+    print('Weather fallback')
