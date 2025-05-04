@@ -40,71 +40,77 @@ git clone https://github.com/Millsy102/skyCORE-AI.git
 cd skyCORE-AI
 pip install -r requirements.txt  # or: pip install PySide6
 python ui/main_window.py
-🪟 Windows Quick Launch (Optional)
-If you're on Windows, you can use the included launch_skycore.bat file for quick startup:
+```
 
-bat
-Copy
-Edit
+---
+
+### 🪟 Windows Quick Launch (Optional)
+
+If you're on Windows, you can use the included `launch_skycore.bat` file for quick startup:
+
+```bat
 @echo off
 cd /d %~dp0
 python ui/main_window.py
-Just double-click the .bat file to launch skyCORE-AI.
+```
 
-💡 Note: Make sure python is added to your system PATH for this to work.
+Just double-click the `.bat` file to launch skyCORE-AI.
 
-🧠 AI Dev Commands
+> 💡 **Note:** Make sure `python` is added to your system PATH for this to work.
+
+---
+
+## 🧠 AI Dev Commands
+
 Use slash commands inside the Dashboard:
 
-/model claude — switch models
+* `/model claude` — switch models
+* `/file edit path.py fix indentation` — AI rewrites the file
+* `/plugin demo run` — execute plugin function
+* `Generate a plugin that converts Markdown to PDF` — AI scaffolds code
 
-/file edit path.py fix indentation — AI rewrites the file
+---
 
-/plugin demo run — execute plugin function
+## 📁 Plugin Project Format
 
-Generate a plugin that converts Markdown to PDF — AI scaffolds code
-
-📁 Plugin Project Format
-arduino
-Copy
-Edit
+```
 myplugin/
 ├── main.py         # logic entrypoint
 ├── config.yaml     # plugin metadata
 ├── ui.yaml         # optional GUI layout
 └── test.py         # optional tests
+```
+
 To use:
 
-Zip your plugin folder
+* Zip your plugin folder
+* Drop it in `/plugins_zips/`
+* skyCORE-AI does the rest
 
-Drop it in /plugins_zips/
+---
 
-skyCORE-AI does the rest
+## 📂 Folder Overview
 
-📂 Folder Overview
-Folder	Purpose
-/plugins/	Installed plugin projects
-/plugins_zips/	Drop zipped plugin folders here
-/profiles/	Saved configuration snapshots
-/ui/	GUI and tab layouts
-/src/	AI backend, plugin engine, core logic
+| Folder           | Purpose                               |
+| ---------------- | ------------------------------------- |
+| `/plugins/`      | Installed plugin projects             |
+| `/plugins_zips/` | Drop zipped plugin folders here       |
+| `/profiles/`     | Saved configuration snapshots         |
+| `/ui/`           | GUI and tab layouts                   |
+| `/src/`          | AI backend, plugin engine, core logic |
 
-📃 License
-skyCORE-AI is released under the MIT License — free to use, share, and modify. Contributions welcome.
+---
 
-🙌 Credits
-Built and designed by @Millsy102
+## 📃 License
 
-This project was proudly co-developed using AI — especially ChatGPT — to brainstorm, write, test, and refine ideas
+skyCORE-AI is released under the **MIT License** — free to use, share, and modify. Contributions welcome.
 
-skyCORE-AI was made to empower developers, not replace them. Real devs are the foundation of this ecosystem
+---
 
-We salute AI engineers, traditional coders, and everyone exploring new possibilities
+## 🙌 Credits
 
-Powered by: Python, PySide6, OpenAI, Hugging Face, and ✨ the global dev community
-
-vbnet
-Copy
-Edit
-
-Let me know if you want this also injected into your canvas or zipped for release.
+* Built and designed by [@Millsy102](https://github.com/Millsy102)
+* This project was proudly co-developed using AI — especially ChatGPT — to brainstorm, write, test, and refine ideas
+* skyCORE-AI was made to empower developers, not replace them. Real devs are the foundation of this ecosystem
+* We salute AI engineers, traditional coders, and everyone exploring new possibilities
+* Powered by: Python, PySide6, OpenAI, Hugging Face, and ✨ the global dev community
