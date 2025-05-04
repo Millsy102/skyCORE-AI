@@ -7,7 +7,7 @@
   <a href="#"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
   <a href="#"><img src="https://img.shields.io/badge/python-3.9%2B-yellow.svg"></a>
   <a href="#"><img src="https://img.shields.io/badge/status-stable-lightgrey"></a>
-  <a href="https://discord.gg/m4ZCy2UbCY"><img src="https://img.shields.io/discord/1219648107884443648?label=Join%20Discord&logo=discord&style=flat&color=5865F2"></a>
+  <a href="https://discord.gg/m4ZCy2UbCY"><img src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?logo=discord&logoColor=white&style=flat"></a>
 </p>
 
 ---
