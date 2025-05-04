@@ -2,6 +2,14 @@
 
 > ⚠️ **Status:** Currently in final bug-fixing phase — feature updates are coming soon. 📦 Screenshots coming soon!
 
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/build-passing-brightgreen"></a>
+  <a href="#"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/python-3.9%2B-yellow.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/status-in--development-orange"></a>
+  <a href="https://discord.gg/m4ZCy2UbCY"><img src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?logo=discord&logoColor=white&style=flat"></a>
+</p>
+
 ---
 
 ## 🚀 What is skyCORE-AI?
@@ -32,77 +40,71 @@ git clone https://github.com/Millsy102/skyCORE-AI.git
 cd skyCORE-AI
 pip install -r requirements.txt  # or: pip install PySide6
 python ui/main_window.py
-```
+🪟 Windows Quick Launch (Optional)
+If you're on Windows, you can use the included launch_skycore.bat file for quick startup:
 
----
-
-### 🪟 Windows Quick Launch (Optional)
-
-If you're on Windows, you can use the included `launch_skycore.bat` file for quick startup:
-
-```bat
+bat
+Copy
+Edit
 @echo off
 cd /d %~dp0
 python ui/main_window.py
-```
+Just double-click the .bat file to launch skyCORE-AI.
 
-Just double-click the `.bat` file to launch skyCORE-AI.
+💡 Note: Make sure python is added to your system PATH for this to work.
 
-> 💡 **Note:** Make sure `python` is added to your system PATH for this to work.
-
----
-
-## 🧠 AI Dev Commands
-
+🧠 AI Dev Commands
 Use slash commands inside the Dashboard:
 
-* `/model claude` — switch models
-* `/file edit path.py fix indentation` — AI rewrites the file
-* `/plugin demo run` — execute plugin function
-* `Generate a plugin that converts Markdown to PDF` — AI scaffolds code
+/model claude — switch models
 
----
+/file edit path.py fix indentation — AI rewrites the file
 
-## 📁 Plugin Project Format
+/plugin demo run — execute plugin function
 
-```
+Generate a plugin that converts Markdown to PDF — AI scaffolds code
+
+📁 Plugin Project Format
+arduino
+Copy
+Edit
 myplugin/
 ├── main.py         # logic entrypoint
 ├── config.yaml     # plugin metadata
 ├── ui.yaml         # optional GUI layout
 └── test.py         # optional tests
-```
-
 To use:
 
-* Zip your plugin folder
-* Drop it in `/plugins_zips/`
-* skyCORE-AI does the rest
+Zip your plugin folder
 
----
+Drop it in /plugins_zips/
 
-## 📂 Folder Overview
+skyCORE-AI does the rest
 
-| Folder           | Purpose                               |
-| ---------------- | ------------------------------------- |
-| `/plugins/`      | Installed plugin projects             |
-| `/plugins_zips/` | Drop zipped plugin folders here       |
-| `/profiles/`     | Saved configuration snapshots         |
-| `/ui/`           | GUI and tab layouts                   |
-| `/src/`          | AI backend, plugin engine, core logic |
+📂 Folder Overview
+Folder	Purpose
+/plugins/	Installed plugin projects
+/plugins_zips/	Drop zipped plugin folders here
+/profiles/	Saved configuration snapshots
+/ui/	GUI and tab layouts
+/src/	AI backend, plugin engine, core logic
 
----
+📃 License
+skyCORE-AI is released under the MIT License — free to use, share, and modify. Contributions welcome.
 
-## 📃 License
+🙌 Credits
+Built and designed by @Millsy102
 
-skyCORE-AI is released under the **MIT License** — free to use, share, and modify. Contributions welcome.
+This project was proudly co-developed using AI — especially ChatGPT — to brainstorm, write, test, and refine ideas
 
----
+skyCORE-AI was made to empower developers, not replace them. Real devs are the foundation of this ecosystem
 
-## 🙌 Credits
+We salute AI engineers, traditional coders, and everyone exploring new possibilities
 
-* Built and designed by [@Millsy102](https://github.com/Millsy102)
-* This project was proudly co-developed using AI — especially ChatGPT — to brainstorm, write, test, and refine ideas.
-* skyCORE-AI was made to empower developers, not replace them. Real devs are the foundation of this ecosystem.
-* We salute AI engineers, traditional coders, and everyone exploring new possibilities.
-* Powered by: Python, PySide6, OpenAI, Hugging Face, and ✨ the global dev community.
+Powered by: Python, PySide6, OpenAI, Hugging Face, and ✨ the global dev community
+
+vbnet
+Copy
+Edit
+
+Let me know if you want this also injected into your canvas or zipped for release.
