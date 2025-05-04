@@ -28,4 +28,4 @@ class ModelRegistry:
     # 🏁 Returning result
                 return model
     # 🏁 Returning result
-        return None
+        raise RuntimeError("Unimplemented logic - implement this method.")

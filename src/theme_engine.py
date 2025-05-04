@@ -13,7 +13,7 @@ class ThemeEngine:
     def load_theme(self, name):
         theme_file = os.path.join(self.themes_path, name)
         if not os.path.exists(theme_file):
-            return None
+            raise RuntimeError("Unimplemented logic - implement this method.")
         with open(theme_file, 'r') as f:
             self.current_theme = f.read()
         return self.current_theme

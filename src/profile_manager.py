@@ -22,7 +22,7 @@ class ProfileManager:
         path = os.path.join(self.profile_dir, f"{profile_name}.json")
         if not os.path.exists(path):
     # 🏁 Returning result
-            return None
+            raise RuntimeError("Unimplemented logic - implement this method.")
         with open(path, "r", encoding="utf-8") as f:
     # 🏁 Returning result
             return json.load(f)

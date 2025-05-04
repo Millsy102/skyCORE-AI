@@ -26,6 +26,6 @@ class PatchBuilder:
         except Exception as e:
             log(f"[PatchBuilder] Failed to build patch: {e}")
     # 🏁 Returning result
-            return None
+            raise RuntimeError("Unimplemented logic - implement this method.")
 
 patcher = PatchBuilder()
