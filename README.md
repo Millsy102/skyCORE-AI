@@ -2,14 +2,6 @@
 
 > ⚠️ **Status:** Currently in final bug-fixing phase — feature updates are coming soon. 📦 Screenshots coming soon!
 
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/build-passing-brightgreen"></a>
-  <a href="#"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-  <a href="#"><img src="https://img.shields.io/badge/python-3.9%2B-yellow.svg"></a>
-  <a href="#"><img src="https://img.shields.io/badge/status-in--development-orange"></a>
-  <a href="https://discord.gg/m4ZCy2UbCY"><img src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?logo=discord&logoColor=white&style=flat"></a>
-</p>
-
 ---
 
 ## 🚀 What is skyCORE-AI?
@@ -110,5 +102,7 @@ skyCORE-AI is released under the **MIT License** — free to use, share, and mod
 ## 🙌 Credits
 
 * Built and designed by [@Millsy102](https://github.com/Millsy102)
-* Developed with help from ChatGPT
-* Powered by: Python, PySide6, OpenAI, Hugging Face, and ✨ you
+* This project was proudly co-developed using AI — especially ChatGPT — to brainstorm, write, test, and refine ideas.
+* skyCORE-AI was made to empower developers, not replace them. Real devs are the foundation of this ecosystem.
+* We salute AI engineers, traditional coders, and everyone exploring new possibilities.
+* Powered by: Python, PySide6, OpenAI, Hugging Face, and ✨ the global dev community.
