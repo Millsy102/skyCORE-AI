@@ -15,52 +15,9 @@
 
 An open-source, OS-like platform and plugin execution engine with AI-driven automation and a multi-tab interface. Drop any zipped Python plugin into `/plugins_zips/`, and skyCORE-AI will auto-scan, configure, validate, test, and render its UI—no code changes required.
 
-## 📋 Table of Contents
+## 📋 Table of Contents1. [Key Features](#-key-features)
 
-1. [Key Features](#-key-features)
-2. [Screenshots](#-screenshots)
-3. [Prerequisites](#-prerequisites)
-4. [Installation](#-installation)
-5. [Quick Start](#-quick-start)
-6. [Plugin Development Guide](#-plugin-development-guide)
-7. [Configuration](#-configuration)
-8. [CLI Usage](#-cli-usage)
-9. [File Structure](#-file-structure)
-10. [Built With](#-built-with)
-11. [Contributing](#-contributing)
-12. [License](#-license)
-13. [Community & Support](#-community--support)
-
----
-
-## ✅ Key Features
-
-* **Multi-Tab Interface**: Dashboard, SkyDev IDE, Trace, Profile Manager, Settings
-* **AI Controller**: Persona profiles, memory persistence, safe-mode enforcement, prompt tracing
-* **Plugin Loader**: Automatic ZIP extraction and sandboxed loading of Python plugins
-* **Universal Runtime**: Call any function exposed in `main.py` with parameter passing
-* **SkyDev IDE**: VSCode-like file editor, real-time code runner, linting, and validation tools
-* **Config Auto-Loader**: `.env`, `.yaml`, `.json` support with type validation
-* **UI Renderer**: Live PySide6 widget panels generated from `ui.yaml`
-* **Trace Viewer**: Inspect, replay, and export prompt-response sessions for debugging
-* **Theme Engine**: Dark/light mode toggling with custom theming support
-* **Profile Manager**: Save, load, export, and import user profiles via `.skyprofile` files
-
----
-
-## 🖼️ Screenshots
-
-<!-- Replace with actual screenshots or GIFs -->
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=Dashboard+View" alt="Dashboard" />
-  &nbsp;
-  <img src="https://via.placeholder.com/800x400.png?text=SkyDev+IDE" alt="IDE" />
-</p>
-
----
-
-## ⚙️ Prerequisites
+2. [Prerequisites](#-prerequisites)
 
 * Python 3.9 or higher
 * `pip` package manager
