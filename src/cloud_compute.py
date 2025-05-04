@@ -18,7 +18,7 @@ class CloudCompute:
         if provider not in self.providers:
             log(f"[CloudCompute] Unknown provider: {provider}")
     # 🏁 Returning result
-            raise RuntimeError('⚠️ Unimplemented logic - please complete this method.')
+            return None
     # 🏁 Returning result
         return self.providers[provider](payload)
 

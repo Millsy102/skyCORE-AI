@@ -44,7 +44,7 @@ class PluginManager:
     # 🏁 Returning result
                 return name
     # 🏁 Returning result
-        raise RuntimeError('⚠️ Unimplemented logic - please complete this method.')
+        return None
 
 # Function: run_plugin — handles a core step in this module
     def run_plugin(self, name, user_input):

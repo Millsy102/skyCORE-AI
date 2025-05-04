@@ -9,4 +9,4 @@ class IntentEngine:
             return "open_plugin_tab", {}
         if "reload" in prompt and "plugin" in prompt:
             return "reload_plugins", {}
-        raise RuntimeError('⚠️ Unimplemented logic - please complete this method.'), prompt
+        return None, prompt

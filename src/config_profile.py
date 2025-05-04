@@ -16,7 +16,7 @@ class ConfigProfileManager:
     def import_profile(self, name):
         path = os.path.join(self.profile_dir, f"{name}.skyprofile")
         if not os.path.exists(path):
-            raise RuntimeError('⚠️ Unimplemented logic - please complete this method.'), f"✖ Profile {name} not found"
+            return None, f"✖ Profile {name} not found"
         with open(path, 'r') as f:
             data = json.load(f)
         return data, "✔ Profile loaded"

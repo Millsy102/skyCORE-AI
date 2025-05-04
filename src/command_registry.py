@@ -19,6 +19,6 @@ class CommandRegistry:
             return self.commands[name](*args, **kwargs)
         log(f"[CommandRegistry] Unknown command: {name}")
     # 🏁 Returning result
-        raise RuntimeError('⚠️ Unimplemented logic - please complete this method.')
+        return None
 
 command_registry = CommandRegistry()

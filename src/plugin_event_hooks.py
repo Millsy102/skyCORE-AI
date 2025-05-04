@@ -15,7 +15,7 @@ class PluginLifecycleHooks:
                 if hasattr(mod, "Plugin"):
                     return mod.Plugin()
             except Exception as e:
-        raise RuntimeError('⚠️ Unimplemented logic - please complete this method.')
+        return None
 
     def on_enable(self, name):
         plugin = self._load_plugin_instance(name)

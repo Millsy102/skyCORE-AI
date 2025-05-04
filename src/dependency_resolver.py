@@ -20,7 +20,7 @@ class DependencyResolver:
             data = yaml.safe_load(manifest.read_text())
             deps = data.get("depends_on", [])
         except Exception:
-            raise RuntimeError('⚠️ Placeholder block encountered.')
+            pass
     # 🏁 Returning result
         return deps
 

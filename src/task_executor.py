@@ -24,7 +24,7 @@ class TaskExecutor:
         except Exception as e:
             log(f"[TaskExecutor] Task failed: {e}")
     # 🏁 Returning result
-            raise RuntimeError('⚠️ Unimplemented logic - please complete this method.')
+            return None
 
 # removed comment
 xexutor = TaskExecutor()
