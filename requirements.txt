@@ -1,5 +1,5 @@
 PySide6
-requests
+requests>=2.32.0
 obs-websocket-py
 websocket-client
 torch>=2.6.0
